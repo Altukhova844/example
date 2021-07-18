@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Заголовок страницы</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+                rel="stylesheet" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+                integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+                crossorigin="anonymous" />
+                <link rel="stylesheet" href="./css/styles.css">
+        </head>
+    <body>
+    <section class="customer__section section">
+        <div class="container">
+            <h2 class="visually-hidden">Customer reviews</h2>
+    
+            <picture class="customer__portrait">
+                <source
+                    srcset="./images/customer-review/customer-review-1_laptop-min.png 1x, ./images/customer-review/customer-review-1_laptop@2x-min.png 2x"
+                    media="(min-width: 1200px)">
+                <source
+                    srcset="./images/customer-review/customer-review-1_tablet-min.png 1x, ./images/customer-review/customer-review-1_tablet@2x-min.png 2x"
+                    media="(min-width: 768px)">
+                <source
+                    srcset="./images/customer-review/customer-review-1_mobile-min.png 1x, ./images/customer-review/customer-review-1_mobile@2x-min.png 2x"
+                    media="(min-width: 320px)">
+                <img src="./images/customer-review/customer-review-1_mobile-min.png" alt="customer-1" width="85"
+                    height="85">
+            </picture>
+    
+            <div class="customer__comment-box">
+                <p class="customer__comment-text">
+                    Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
+                    nunc,
+                    accumsan
+                    congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+            </div>
+    
+            <svg width="32" height="4">
+                <use href="./images/sprite.svg#icon-ellipse-group-review"></use>
+            </svg>
+    
+            <p class="customer__signature">
+                Emily, Los Angeles
+            </p>
+    
+            <ul class="list customer__slider-list">
+                <li class="customer__slider-item">
+                    <svg class="customer__slider-icon customer__slider-icon--current" width="12" height="12">
+                        <use href="./images/sprite.svg#icon-home"></use>
+                    </svg>
+                </li>
+                <li class="customer__slider-item">
+                    <svg class="customer__slider-icon" width="12" height="12">
+                        <use href="./images/sprite.svg#icon-ellipse"></use>
+                    </svg>
+                </li>
+                <li class="customer__slider-item">
+                    <svg class="customer__slider-icon" width="12" height="12">
+                        <use href="./images/sprite.svg#icon-ellipse"></use>
+                    </svg>
+                </li>
+            </ul>
+    
+        </div>
+    </section>
+    </body>
+</html>
