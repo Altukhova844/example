@@ -106,11 +106,9 @@ a {
 /* CUSTOMER REVIEWS SECTION */
 
 .customer__section {
-  /* position: relative; */
 }
 
 .customer__portrait {
-  /* position: absolute; */
   display: inline-block;
   /* left: 40%;
    надо зафиксировать посредине */
@@ -135,6 +133,18 @@ a {
   background-color: var(--quote-background-grey-color);
 }
 
+.customer__comment-box::before {
+  display: inline-block;
+  content: "";
+  width: 54px;
+  height: 40px;
+  background-image: url("../images/customer-review/sprite.svg#icon-quotation-mark");
+  stroke: violet;
+  outline: black;
+
+  /* icon-quotation-mark */
+}
+
 .customer__comment-text {
   margin: 0 62px;
 }
@@ -145,13 +155,6 @@ a {
   background-position: center bottom 1px;
   background-size: 100% 3px;
   background-image: linear-gradient(to right, red, blue);
-}
-
-.customer__comment-box::before {
-  content: "";
-  width: 54px;
-  height: 40px;
-  background-image: url("../images/advantages-3_mobile-min.png");
 }
 
 .customer__signature::before {
