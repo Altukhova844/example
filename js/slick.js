@@ -1,39 +1,15 @@
 // USE THIS 4 SLIDER
 
 $('.one-time').slick({
-    dots: false,
+    dots: true,
     arrows: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    dotsClass: '.customer__slider-buttons'
+    autoplaySpeed: 5000,
+    dotsClass: 'slick-dots'
   
-    // responsive: [
-    //     {
-    //         breakpoint: 1280,
-    //         settings: {
-    //             slidesToShow: 1,
-    //         }
-    //     }
-	//     {
-	//       breakpoint: 768,
-	//       settings: {
-	//         slidesToShow: 1,
-	//       }
-	//     },
-	//     {
-	//       breakpoint: 480,
-	//       settings: {
-    //           slidesToShow: 1,
-    //           autoplay: false,
-
-	//       }
-	//     }
-    // ]
     
 });
-
-// $('.single-item').slick('slickCurrentSlide');

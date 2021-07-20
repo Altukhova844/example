@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Заголовок страницы</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+            integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="./css/styles.css">
+
+        <!-- USE THIS 4 SLIDER : 1 link and 2 scripts
+                and JS FOLFER -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <button type="button" class="about__btn" data-modal-open>read more</button>
+
+        <!-- Backdrop & Modal -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal__btn-close" atl="Close" data-modal-close>
+                    <svg class="modal__icon-close" width="11" height="11">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+
+                <h3>how it's made</h3>
+            <!-- ТУТ ДОЛЖНА БЫТЬ КАРТИНКА КОРОВЫ -->
+                <picture>
+                    <source
+                        srcset="./images/customer-review/customer-review-1_laptop-min.png 1x, ./images/customer-review/customer-review-1_laptop@2x-min.png 2x"
+                        media="(min-width: 1200px)">
+                    <source
+                        srcset="./images/customer-review/customer-review-1_tablet-min.png 1x, ./images/customer-review/customer-review-1_tablet@2x-min.png 2x"
+                        media="(min-width: 768px)">
+                    <source
+                        srcset="./images/customer-review/customer-review-1_mobile-min.png 1x, ./images/customer-review/customer-review-1_mobile@2x-min.png 2x"
+                        media="(min-width: 320px)">
+                    <img class="customer__portrait" src="./images/customer-review/customer-review-1_mobile-min.png" alt="customer-1"
+                        width="85" height="85">
+                </picture>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta ipsa id! Mollitia unde, odio adipisci iure laudantium iste exercitationem nulla non consectetur quo delectus ratione cum ut amet expedita, itaque aspernatur tempora facere blanditiis fugit dolores! Quod inventore consectetur, sunt doloremque praesentium placeat, natus laborum totam, explicabo iste repellendus.</p>
+            </div>
+        
+    </body>
+
+</html>
