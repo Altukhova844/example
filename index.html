@@ -11,49 +11,164 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
                 integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
                 crossorigin="anonymous" />
-                <link rel="stylesheet" href="./css/styles.css">
+            <link rel="stylesheet" href="./css/styles.css">
+
+            <!-- USE THIS 4 SLIDER : 1 link and 2 scripts
+            and JS FOLFER -->
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+            <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            
         </head>
     <body>
     <section class="customer__section section">
         <div class="container">
             <h2 class="visually-hidden">Customer reviews</h2>
-    
-            <picture class="customer__portrait">
-                <source
-                    srcset="./images/customer-review/customer-review-1_laptop-min.png 1x, ./images/customer-review/customer-review-1_laptop@2x-min.png 2x"
-                    media="(min-width: 1200px)">
-                <source
-                    srcset="./images/customer-review/customer-review-1_tablet-min.png 1x, ./images/customer-review/customer-review-1_tablet@2x-min.png 2x"
-                    media="(min-width: 768px)">
-                <source
-                    srcset="./images/customer-review/customer-review-1_mobile-min.png 1x, ./images/customer-review/customer-review-1_mobile@2x-min.png 2x"
-                    media="(min-width: 320px)">
-                <img src="./images/customer-review/customer-review-1_mobile-min.png" alt="customer-1" width="85"
-                    height="85">
-            </picture>
             
-            <!-- <svg class="icon-kavichki">
-                <use href="./images/customer-review/sprite.svg#icon-quotation-mark"></use>
-            </svg> -->
+            <ul class="one-time list">
+                <li class="customer__slider">
+                    <picture class="customer__portrait">
+                        <source
+                            srcset="./images/customer-review/customer-review-1_laptop-min.png 1x, ./images/customer-review/customer-review-1_laptop@2x-min.png 2x"
+                            media="(min-width: 1200px)">
+                        <source
+                            srcset="./images/customer-review/customer-review-1_tablet-min.png 1x, ./images/customer-review/customer-review-1_tablet@2x-min.png 2x"
+                            media="(min-width: 768px)">
+                        <source
+                            srcset="./images/customer-review/customer-review-1_mobile-min.png 1x, ./images/customer-review/customer-review-1_mobile@2x-min.png 2x"
+                            media="(min-width: 320px)">
+                        <img class="customer__portrait" src="./images/customer-review/customer-review-1_mobile-min.png" alt="customer-1"
+                            width="85" height="85">
+                    </picture>
+                
+                    <div class="customer__comment-box">
+                        <p class="customer__comment-text">
+                            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
+                            nunc,
+                            accumsan
+                            congue. Lorem ipsum primis in nibh vel risus.
+                        </p>
+                    </div>
+                
+                    <p class="customer__signature">
+                        Emily, Los Angeles
+                    </p>
+                
+                    <!-- <ul class="list customer__slider-list">
+                        <li class="customer__slider-item">
+                            <svg class="customer__slider-icon customer__slider-icon--current" width="12" height="12">
+                                <use href="./images/customer-review/sprite.svg#icon-home"></use>
+                            </svg>
+                        </li>
+                        <li class="customer__slider-item">
+                            <svg class="customer__slider-icon" width="12" height="12">
+                                <use href="./images/customer-review/sprite.svg#icon-ellipse"></use>
+                            </svg>
+                        </li>
+                        <li class="customer__slider-item">
+                            <svg class="customer__slider-icon" width="12" height="12">
+                                <use href="./images/customer-review/sprite.svg#icon-ellipse"></use>
+                            </svg>
+                        </li>
+                    </ul> -->
+                </li>
+                <li class="customer__slider">
+                    <picture class="customer__portrait">
+                        <source
+                            srcset="./images/customer-review/customer-review-2_laptop-min.png 1x, ./images/customer-review/customer-review-2_laptop@2x-min.png 2x"
+                            media="(min-width: 1200px)">
+                        <source
+                            srcset="./images/customer-review/customer-review-2_tablet-min.png 1x, ./images/customer-review/customer-review-2_tablet@2x-min.png 2x"
+                            media="(min-width: 768px)">
+                        <source
+                            srcset="./images/customer-review/customer-review-2_mobile-min.png 1x, ./images/customer-review/customer-review-2_mobile@2x-min.png 2x"
+                            media="(min-width: 320px)">
+                        <img class="customer__portrait" src="./images/customer-review/customer-review-2_mobile-min.png" alt="customer-2"
+                            width="85" height="85">
+                    </picture>
+                
+                    <div class="customer__comment-box">
+                        <p class="customer__comment-text">
+                            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
+                            nunc,
+                            accumsan
+                            congue. Lorem ipsum primis in nibh vel risus.
+                        </p>
+                    </div>
+                
+                    <p class="customer__signature">
+                        Grace, Chicago
+                    </p>
+                
+                    <!-- <ul class="list customer__slider-list">
+                        <li class="customer__slider-item">
+                            <svg class="customer__slider-icon customer__slider-icon--current" width="12" height="12">
+                                <use href="./images/customer-review/sprite.svg#icon-home"></use>
+                            </svg>
+                        </li>
+                        <li class="customer__slider-item">
+                            <svg class="customer__slider-icon" width="12" height="12">
+                                <use href="./images/customer-review/sprite.svg#icon-ellipse"></use>
+                            </svg>
+                        </li>
+                        <li class="customer__slider-item">
+                            <svg class="customer__slider-icon" width="12" height="12">
+                                <use href="./images/customer-review/sprite.svg#icon-ellipse"></use>
+                            </svg>
+                        </li>
+                    </ul> -->
+                </li>
+                <li class="customer__slider">
+                    <picture class="customer__portrait">
+                        <source
+                            srcset="./images/customer-review/customer-review-3_laptop-min.png 1x, ./images/customer-review/customer-review-3_laptop@2x-min.png 2x"
+                            media="(min-width: 1200px)">
+                        <source
+                            srcset="./images/customer-review/customer-review-3_tablet-min.png 1x, ./images/customer-review/customer-review-3_tablet@2x-min.png 2x"
+                            media="(min-width: 768px)">
+                        <source
+                            srcset="./images/customer-review/customer-review-3_mobile-min.png 1x, ./images/customer-review/customer-review-3_mobile@2x-min.png 2x"
+                            media="(min-width: 320px)">
+                        <img class="customer__portrait" src="./images/customer-review/customer-review-3_mobile-min.png" alt="customer-3"
+                            width="85" height="85">
+                    </picture>
+                
+                    <div class="customer__comment-box">
+                        <p class="customer__comment-text">
+                            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
+                            nunc,
+                            accumsan
+                            congue. Lorem ipsum primis in nibh vel risus.
+                        </p>
+                    </div>
+                
+                    <p class="customer__signature">
+                        Caroline, New York
+                    </p>
+                
+                    <!-- <ul class="list customer__slider-list">
+                        <li class="customer__slider-item">
+                            <svg class="customer__slider-icon customer__slider-icon--current" width="12" height="12">
+                                <use href="./images/customer-review/sprite.svg#icon-home"></use>
+                            </svg>
+                        </li>
+                        <li class="customer__slider-item">
+                            <svg class="customer__slider-icon" width="12" height="12">
+                                <use href="./images/customer-review/sprite.svg#icon-ellipse"></use>
+                            </svg>
+                        </li>
+                        <li class="customer__slider-item">
+                            <svg class="customer__slider-icon" width="12" height="12">
+                                <use href="./images/customer-review/sprite.svg#icon-ellipse"></use>
+                            </svg>
+                        </li>
+                    </ul> -->
+                </li>
+            </ul>  
 
-            <div class="customer__comment-box">
-                <p class="customer__comment-text">
-                    Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
-                    nunc,
-                    accumsan
-                    congue. Lorem ipsum primis in nibh vel risus.
-                </p>
-            </div>
-    
-            <svg width="32" height="4">
-                <use href="./images/customer-review/sprite.svg#icon-ellipse-group-review"></use>
-            </svg>
-    
-            <p class="customer__signature">
-                Emily, Los Angeles
-            </p>
-    
-            <ul class="list customer__slider-list">
+            
+             <!-- CHANGE LIST FOR "BUTTONS"  -->
+            <ul class="list customer__slider-buttons">
                 <li class="customer__slider-item">
                     <svg class="customer__slider-icon customer__slider-icon--current" width="12" height="12">
                         <use href="./images/customer-review/sprite.svg#icon-home"></use>
@@ -70,8 +185,9 @@
                     </svg>
                 </li>
             </ul>
-    
         </div>
     </section>
+<!-- USE THIS SCRIPT 4 SLICK -->
+    <script src="./js/slick.js"></script>
     </body>
 </html>

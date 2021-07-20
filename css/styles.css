@@ -109,11 +109,8 @@ a {
 }
 
 .customer__portrait {
-  display: inline-block;
-  /* left: 40%;
-   надо зафиксировать посредине */
-
-  margin-bottom: 29px;
+  display: block;
+  margin: 0 auto;
 }
 
 .customer__comment-box {
@@ -133,37 +130,8 @@ a {
   background-color: var(--quote-background-grey-color);
 }
 
-.customer__comment-box::before {
-  display: inline-block;
-  content: "";
-  width: 54px;
-  height: 40px;
-  background-image: url("../images/customer-review/sprite.svg#icon-quotation-mark");
-  stroke: violet;
-  outline: black;
-
-  /* icon-quotation-mark */
-}
-
 .customer__comment-text {
   margin: 0 62px;
-}
-
-.customer__comment-text p {
-  display: inline;
-  background-repeat: no-repeat;
-  background-position: center bottom 1px;
-  background-size: 100% 3px;
-  background-image: linear-gradient(to right, red, blue);
-}
-
-.customer__signature::before {
-  display: inline-block;
-  content: "";
-  width: 32px;
-  height: 4px;
-
-  background-image: url(../images/customer-review/sprite.svg#);
 }
 
 .customer__signature {
@@ -177,7 +145,7 @@ a {
   color: var(--black-text-color);
 }
 
-.customer__slider-list {
+.customer__slider-buttons {
   list-style: none;
   display: flex;
   justify-content: center;
